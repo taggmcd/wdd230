@@ -2,14 +2,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    width: 800px;
+    width: 400px;
     margin: auto;
 }
 
 header {
     background-color: cadetblue;
     text-align: center;
-    vertical-align: middle;
 }
 
 header img {
@@ -28,12 +27,13 @@ header h1 {
 
 footer {
     background-color: cadetblue;
-    color: white;
+    color: #000000;
     text-align: center;
 }
 
 nav {
-    grid-column: auto;
+    display: flex;
+    flex-direction: column;
     background-color: black;
 }
 
@@ -47,6 +47,7 @@ nav a {
 }
 
 main {
+    display: grid;
     grid-column: auto;
 }
 
