@@ -14,7 +14,7 @@ header {
 header img {
     display: inline-block;
     vertical-align: middle;
-    padding: 20px;
+    margin: 20px;
     height: 150px;
     width: 150px;
 }
