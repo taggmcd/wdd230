@@ -13,4 +13,12 @@
         column-gap: 20px;
     }
 
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
 }
