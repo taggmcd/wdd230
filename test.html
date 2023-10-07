@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul ol li {
+        .linklist {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .linklist li {
             color: forestgreen;
-        }
-
-        ul li {
-            color: red;
-        }
-
-        ol+li {
-            color: blue;
+            background-color: blue;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
-    <ul>
-        <li>Unordered item</li>
-        <li>Unordered item
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-            </ol>
-        </li>
-    </ul>
+    <main>
+        <h2>The Blue Mountain Express</h2>
+        <ul class="linklist">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </main>
 </body>
 
 </html>
