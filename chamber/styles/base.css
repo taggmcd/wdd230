@@ -1,0 +1,88 @@
+:root {
+    --primary: #4c5454;
+    --secondary: #ff715b;
+    --accent1: #1ea896;
+    --accent2: #523f38;
+    --color-para-bg: var(--accent2);
+    --color-bg-text: white;
+
+    --heading-font: Roboto, sans-serif;
+    --paragraph-font: Actor, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--primary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+header img {
+    display: inline-block;
+    vertical-align: center;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.social svg {
+    fill: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: white;
+    color: var(--secondary);
+    margin-left: 30%;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+main {
+    display: grid;
+}
