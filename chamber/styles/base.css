@@ -10,6 +10,12 @@
     --paragraph-font: Actor, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Actor', sans-serif;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     width: 400px;
@@ -83,6 +89,41 @@ nav a {
     display: block;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    left: 50px;
+    bottom: 15px;
+    color: var(--accent1);
+    font-size: medium;
+}
+
+.cta {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
 main {
     display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {
+    margin: 10px 0px;
+    padding: 10px 10px;
+    background-color: var(--color-para-bg);
+    color: var(--color-bg-text);
+}
+
+section h2 {
+    background: #1ea896;
+}
+
+.card {
+    background: white;
+    color: black;
 }

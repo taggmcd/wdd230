@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stanley McDonald WDD 230 Chamber Project">
+    <meta name="description" content="Stanley McDonald WDD 230 of Commerce Project">
     <meta name="author" content="Tagg McDonald">
     <title>Stanley McDonald - WDD 230 - Chamber Project</title>
 
-    <meta property="og:title" content="Stanley McDonald - WDD 230 - Chamber Project">
+    <meta property="og:title" content="Stanley McDonald - WDD 230 - of Commerce Project">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://taggmcd.github.io/wdd230/chamber/">
     <meta property="og:image" content="https://taggmcd.github.io/wdd230/images/Little_mountain_utah.jpg">
@@ -46,17 +46,20 @@
             <a href="#">Join</a>
         </nav>
     </header>
+    <div class="hero">
+        <h1>Pleasant Grove Chamber of Commerce</h1>
+        <img srcset="images/hero-sm.jpg 400w, images/hero-md.jpg 768w, images/hero-lg.jpg"
+            sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, 1024px" src="images/hero-sm.jpg"
+            alt="Hero image">
+        <a href="#" class="cta">Join the Chamber</a>
+    </div>
     <main>
-
-        <div class="hero">
-            <img srcset="images/hero-sm.jpg 400w, images/hero-md.jpg 768w, images/hero-lg.jpg"
-                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, 1024px" src="images/hero-sm.jpg"
-                alt="Hero image">
-            <a href="#"><button class="cta">Join the Chamber</button></a>
-        </div>
         <section id="events">
             <h2>Events</h2>
-            <p>Super cool event</p>
+            <h3>Super Cool Event</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe recusandae corporis porro veritatis
+                officia. Ab rem animi quam nesciunt dicta sed eveniet tenetur doloribus illum. Quaerat facilis quod
+                corrupti labore.</p>
         </section>
         <section id="weather">
             <h2>Weather</h2>
@@ -64,32 +67,38 @@
         </section>
         <section id="member-spotlight">
             <h2>Member Spotlight</h2>
-            <div class="card">
-                <h3>Member 1</h3>
-                <p>
-                    Member info
-                </p>
-            </div>
-            <div class="card">
-                <h3>Member 2</h3>
-                <p>
-                    Member info
-                </p>
-            </div>
-            <div class="card">
-                <h3>Member 3</h3>
-                <p>
-                    Member info
-                </p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Member 1</h3>
+                    <p>
+                        Member info
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Member 2</h3>
+                    <p>
+                        Member info
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Member 3</h3>
+                    <p>
+                        Member info
+                    </p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div>
-            Footer logo and Address.
+
         </div>
         <div>
             Email and Phone info.
+        </div>
+        <div>
+            <p>&copy; <span id="year"></span> | Tagg McDonald | WDD 230 Chamber Project|
+            <p id="lastModified"></p>
         </div>
     </footer>
     <script src="scripts/getdates.js"></script>
