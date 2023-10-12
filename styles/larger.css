@@ -21,4 +21,8 @@
         display: flex;
     }
 
+    #map {
+        grid-column: 1/3;
+    }
+
 }
