@@ -10,6 +10,10 @@
     --paragraph-font: Actor, Helvetica, sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3 {
@@ -29,6 +33,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    position: relative;
 }
 
 header img {
@@ -114,13 +119,23 @@ main {
 
 section {
     margin: 10px 0px;
-    padding: 10px 10px;
+    padding: 0px;
     background-color: var(--color-para-bg);
     color: var(--color-bg-text);
+    border: var(--accent1);
+    border-style: solid;
+    border-width: 1px;
 }
 
 section h2 {
     background: #1ea896;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+section div {
+    padding: 10px 20px;
 }
 
 .card {
@@ -137,4 +152,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+}
+
+#mode {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 3rem;
+    cursor: pointer;
 }
