@@ -75,7 +75,26 @@ nav a {
 
 main {
     display: grid;
-    grid-column: auto;
+    /* grid-column: auto; */
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-label {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 100%;
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 .card {
