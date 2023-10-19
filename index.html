@@ -11,7 +11,7 @@
   <meta property="og:title" content="Stanley McDonald - WDD 230 - Web Frontend Development">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://taggmcd.github.io/wdd230/">
-  <meta property="og:image" content="https://taggmcd.github.io/wdd230/images/Little_mountain_utah.jpg">
+  <meta property="og:image" content="https://taggmcd.github.io/wdd230/images/Little_mountain_utah.webp">
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
@@ -34,6 +34,14 @@
     </nav>
   </header>
   <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-medium.webp" media="(max-width: 500px)">
+        <source srcset="images/hero-large.webp" media="(max-width: 1000px)">
+        <img src="images/hero-small.webp" alt="Salt Lake City, Ut Temple width=" 1500" height="750">
+      </picture>
+      <p class="hero-label">Salt Lake City, UT</p>
+    </div>
     <h2>WDD 230: Web Frontend Development</h2>
     <hr>
     <section id="activities" class="card">
@@ -53,7 +61,8 @@
           <a href="https://taggmcd.github.io/wdd230/chamber/">Chamber Site</a>
         </li>
         <li>05: <a href="lesson05/bom.html">BOM Application</a> </li>
-        <li>06: </li>
+        <li>06: <a href="lesson06/images/landscape.webp">WebP</a> <a href="lesson06/responsive-images.html">Responsive
+            Images</a></li>
         <li>07: </li>
         <li>08: </li>
         <li>09: </li>
