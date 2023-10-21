@@ -98,6 +98,10 @@ nav a {
     position: relative;
 }
 
+.hero img {
+    width: 100%
+}
+
 .hero h1 {
     position: absolute;
     background-color: #000000;

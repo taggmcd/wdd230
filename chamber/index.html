@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <img class="logo" src="images/logo.png" alt="Pleasant Grove Chamber of Commerce Logo">
+        <img class="logo" src="images/logo.webp" alt="Pleasant Grove Chamber of Commerce Logo">
         <div class="social">
             <svg xmlns="http://www.w3.org/2000/svg" height="2em"
                 viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -51,9 +51,14 @@
     </header>
     <div class="hero">
         <h1>Pleasant Grove Chamber of Commerce</h1>
-        <img srcset="images/hero-sm.jpg 400w, images/hero-md.jpg 768w, images/hero-lg.jpg 1024w"
-            sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, 1024px" src="images/hero-sm.jpg"
-            alt="Monthy meeting featuring Jimmy from TreeFort builders">
+        <!-- <img srcset="images/hero-sm.jpg 400w, images/l6-hero-md.webp 768w, images/l6-hero-lg.webp 1024w"
+            sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, 1024px" src="images/l6-hero-sm.webp"
+            alt="Monthy meeting featuring Jimmy from TreeFort builders"> -->
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/l6-hero-sm.webp">
+            <source media="(max-width: 1024px)" srcset="images/l6-hero-md.webp">
+            <img src="images/l6-hero-lg.webp" alt="Chamber Meeting">
+        </picture>
         <a href="#" class="cta">Join the Chamber</a>
     </div>
     <main>
@@ -69,7 +74,9 @@
         <section id="weather">
             <h2>Weather</h2>
             <div>
-                <p>Awesome weather info</p>
+                <p>Temperature: <span id="temperature">75</span>&deg;F</p>
+                <p>Humidity: <span id="humidity">34</span>%</p>
+                <p>Windchill: <span id="windchill"></span></p>
             </div>
         </section>
         <section id="member-spotlight">
@@ -112,6 +119,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
