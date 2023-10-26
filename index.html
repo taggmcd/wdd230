@@ -37,7 +37,7 @@
     <div class="hero">
       <picture>
         <source media="(max-width: 400px)" srcset="images/hero-small.webp">
-        <img src="images/hero-medium.webp" alt="Salt Lake City, Ut Temple" width="960" height="480">
+        <img src="images/hero-medium.webp" alt="Salt Lake City, Ut Temple" width="960" height="480" loading="lazy">
       </picture>
       <p class="hero-label">Salt Lake City, UT</p>
     </div>
@@ -71,13 +71,13 @@
     <section id="info" class="card">
       <h3>Information</h3>
       <p>Weather: Pleasant Grove, Ut - Perfect</p>
-      <p>Visitor count: 100</p>
+      <p id="numVisits"></p>
 
     </section>
     <div id="map" class="card">
       <iframe class="map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4208.632993642926!2d-111.72760755512732!3d40.35929729601654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1695862644736!5m2!1sen!2sus"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </main>
   <footer>
@@ -88,6 +88,7 @@
   </footer>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/getdates.js"></script>
+  <script src="scripts/visits.js"></script>
 </body>
 
 </html>
