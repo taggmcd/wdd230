@@ -22,7 +22,7 @@ h3 {
 
 body {
     font-family: 'Roboto', sans-serif;
-    width: 400px;
+    width: 100%;
     margin: auto;
 }
 
@@ -119,6 +119,11 @@ nav a {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.wrapper {
     display: grid;
     grid-template-columns: 1fr;
 }
