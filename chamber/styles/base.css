@@ -177,3 +177,7 @@ footer {
     font-size: 3rem;
     cursor: pointer;
 }
+
+#images {
+    text-align: center;
+}
