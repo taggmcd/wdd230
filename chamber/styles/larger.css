@@ -29,14 +29,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+        gap: 20px;
     }
 
-    #events {
-        margin-right: 10px;
-    }
-
-    #weather {
-        margin-left: 10px;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
     }
 
     #member-spotlight {
