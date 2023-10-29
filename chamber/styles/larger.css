@@ -51,4 +51,12 @@
     .card {
         width: 300px;
     }
+
+    img {
+        transition: transform .3s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
 }
