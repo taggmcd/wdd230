@@ -1,0 +1,75 @@
+:root {
+    --text-color: #555;
+    --required-color: red;
+    --valid-color: green;
+}
+
+main {
+    grid-template-columns: 100%;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--text-color);
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--text-color);
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: var(--text-color);
+}
+
+form input.submit-btn {
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: var(--required-color) solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: var(--valid-color) solid 6px;
+}
+
+#rating {
+    font-size: 2rem;
+}
+
+#ratings {
+    display: flex;
+    margin: 0 0 0 20px;
+    width: 100%;
+    max-width: 20rem;
+}
+
+#ratings option {
+    flex: 1 1 auto;
+}

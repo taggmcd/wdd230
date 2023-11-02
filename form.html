@@ -12,28 +12,65 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://taggmcd.github.io/wdd230/">
     <meta property="og:image" content="https://taggmcd.github.io/wdd230/images/Little_mountain_utah.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
+    <header>
+        <img src="images/profile.webp" alt="Picture of Tagg McDonald">
+        <h1>Tagg McDonald</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a target="_blank" href="https://www.byui.edu/">BYU-Idaho</a>
+            <a target="_blank"
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/4?lang=eng#p19">Scripture</a>
+        </nav>
+    </header>
     <main>
         <form action="record.html" method="get">
-            <label>Username: <input type="text" name="username" id="username" required></label>
-            <label>Password: <input type="password" name="password" id="password" required pattern="^[a-zA-Z0-9]{8,}$"
-                    title="Password should be at leat 8 or more charactors long"></label>
-            <label>Confirm Password: <input type="password" name="passwordConfirmation" id="passwordConfirmation"
-                    required></label>
+            <label class="top">Username: <input type="text" name="username" id="username" required></label>
+            <label class="top">Password: <input type="password" name="password" id="password" required
+                    pattern="^[a-zA-Z0-9]{8,}$" title="Password should be at leat 8 or more charactors long"></label>
+            <label class="top">Confirm Password: <input type="password" name="passwordConfirmation"
+                    id="passwordConfirmation" required></label>
             <div id="formmessage"></div>
-            <label>Email: <input type="email" name="email" id="email" pattern=".+@byui\.edu$"
+            <label class="top">Email: <input type="email" name="email" id="email" pattern=".+@byui\.edu$"
                     title="Please enter a valid email address" required></label>
 
-            <label>Page Rating: <input type="range" name="rating" id="rating" min="0" max="10" value="0"
-                    step="1"></label>
-            <input type="submit" value="Enter My Rating">
+            <label class="top">Page Rating: <span id="rangevalue">0</span><input type="range" name="rating" id="rating"
+                    min="1" max="10" value="1" step="1" list="ratings">
+                <datalist id="ratings">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist></label>
+            <input class="submit-btn" type="submit" value="Enter My Rating">
 
 
         </form>
     </main>
+    <footer>
+        <p>&copy; <span id="year"></span> <br>
+            Tagg McDonald <br>
+            Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getdates.js"></script>
     <script src="scripts/form.js"></script>
 </body>
 
