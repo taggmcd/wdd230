@@ -1,6 +1,16 @@
 const password = document.querySelector("#password");
 const passowrdConfirmation = document.querySelector("#passwordConfirmation");
 const message = document.querySelector("#formmessage");
+const rangevalue = document.getElementById("rangevalue");
+const range = document.getElementById("rating");
+
+// RANGE event listener
+range.addEventListener("change", displayRatingValue);
+range.addEventListener("input", displayRatingValue);
+
+function displayRatingValue() {
+  rangevalue.innerHTML = range.value;
+}
 
 passowrdConfirmation.addEventListener("focusout", comparePassword);
 
