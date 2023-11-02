@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stanley McDonald WDD 230 form activity">
+    <meta name="author" content="Tagg McDonald">
+    <title>Stanley McDonald - WDD 230 - Table Activity</title>
+
+    <meta property="og:title" content="Stanley McDonald - WDD 230 - Form Activity">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taggmcd.github.io/wdd230/">
+    <meta property="og:image" content="https://taggmcd.github.io/wdd230/images/Little_mountain_utah.webp">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <main>
+        <form action="record.html" method="get">
+            <label>Username: <input type="text" name="username" id="username" required></label>
+            <label>Password: <input type="password" name="password" id="password" required pattern="^[a-zA-Z0-9]{8,}$"
+                    title="Password should be at leat 8 or more charactors long"></label>
+            <label>Confirm Password: <input type="password" name="passwordConfirmation" id="passwordConfirmation"
+                    required></label>
+            <div id="formmessage"></div>
+            <label>Email: <input type="email" name="email" id="email" pattern=".+@byui\.edu$"
+                    title="Please enter a valid email address" required></label>
+
+            <label>Page Rating: <input type="range" name="rating" id="rating" min="0" max="10" value="0"
+                    step="1"></label>
+            <input type="submit" value="Enter My Rating">
+
+
+        </form>
+    </main>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
