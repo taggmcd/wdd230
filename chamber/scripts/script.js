@@ -20,11 +20,11 @@ function lightMode() {
   });
 }
 modeElement.addEventListener("click", () => {
-  if (modeElement.textContent.includes("🕶️")) {
+  if (modeElement.textContent.includes("Dark Mode")) {
     darkMode();
-    modeElement.textContent = "🔆";
+    modeElement.textContent = "Light Mode";
   } else {
     lightMode();
-    modeElement.textContent = "🕶️";
+    modeElement.textContent = "Dark Mode";
   }
 });
