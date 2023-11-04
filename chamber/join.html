@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stanley McDonald WDD 230 Chamber of Commerce Project">
+    <meta name="author" content="Tagg McDonald">
+    <title>Stanley McDonald - WDD 230 - Chamber of Commerce Project</title>
+
+    <meta property="og:title" content="Stanley McDonald - WDD 230 - Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taggmcd.github.io/wdd230/chamber/">
+    <meta property="og:image" content="https://taggmcd.github.io/wdd230/images/Little_mountain_utah.jpg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="Pleasant Grove Chamber of Commerce Logo">
+        <div class="social">
+            <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+            </svg>
+            <button id="menu"></button>
+            <div id="mode">
+                Dark Mode
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <main>
+        <section id="benefits">
+            <h2>Membership Levels</h2>
+            <div>
+                <h3>Non-Profit / Bronze($200)</h3>
+                <ul>
+                    <li>Monthly business training luncheon</li>
+                    <li>Monthly networking events</li>
+                    <li>Free website promotion</li>
+                    <li>Additional benefits</li>
+                    <ul>
+                        <li>Member to member discounts, Member business referrals</li>
+                        <li>Community involvement</li>
+                        <li>Part of business community voice</li>
+                        <li>Face to face business leader interaction through committee participation</li>
+                        <li>Directory listing on Chamber website</li>
+                        <li>Listing in Chamber Area Magazine</li>
+                        <li>Certificates of Origin discounts</li>
+                        <li>State & local government advocacy</li>
+                        <li>Newsletter events/promotions</li>
+                    </ul>
+                </ul>
+
+                <h3>Silver ($300)</h3>
+                <ul>
+                    <li>One seat at monthly business training luncheon - $200 value</li>
+                    <li>Ribbon cutting/Ground Breaking Social Media/Website Promotion</li>
+                    <li>Free website promotion, marketplace & business search powered by Chamber Nation</li>
+                    <li>Access to Conference Room</li>
+                    <li>Corporate Golf Membership Access - 1 time - 9 holes w/cart for 2 people</li>
+                    <li>Certificates of Origin (20 documents per year)</li>
+                    <li>All benefits of Bronze Membership</li>
+                </ul>
+
+                <h3>Gold ($400)</h3>
+                <ul>
+                    <li>Two (2) Tickets to exclusive annual business awards gala</li>
+                    <li>Logo advertising on chamber webpage</li>
+                    <li>Ribbon cutting/Ground Breaking Social Media/Newsletter/Website Promotion</li>
+                    <li>Free website promotion, marketplace & business search powered by Chamber Nation</li>
+                    <li>Exclusive opportunity on podcasts advertising & promotion</li>
+                    <li>Seat at North Utah County Chamber Summit</li>
+                    <li>Corporate Golf Membership Access - 6 times - 9 holes with cart for 4 people / yr. (Fox Hollow
+                        Golf</li>
+                    <li>Club)</li>
+                    <li>Use of Conference Room</li>
+                    <li>Digital Promotion at Monthly Luncheons and Chamber Events</li>
+                    <li>Certificates of Origin (Unlimited number per year)</li>
+                    <li>All benefits of Silver Membership</li>
+                </ul>
+            </div>
+        </section>
+        <section id="form">
+            <h2>Join The Chamber</h2>
+            <div>
+                <form action="thankyou.html" method="get">
+                    <label class="top">First Name*: <input type="text" name="lName" id="lName" required></label>
+                    <label class="top">Last Name*: <input type="text" name="fName" id="fName" required></label>
+                    <label class="top">Position/Job Title:<input type="text" name="title" id="title"
+                            pattern="^[a-zA-Z\s\-]{7,}$"></label>
+                    <label class="top">Phone*: <input type="tel" name="phone" id="phone" required
+                            placeholder="user@domain.com"></label>
+                    <label class="top">Company/Organization*: <input type="text" name="organization" id="organization"
+                            required></label>
+                    <div>Membership Level</div>
+                    <label class="sbs"><input type="radio" name="memberLevel" id="no" value="np">
+                        Non-Profit</label>
+                    <label class="sbs"><input type="radio" name="memberLevel" id="bronze" value="bronze">
+                        Bronze</label>
+                    <label class="sbs"><input type="radio" name="memberLevel" id="section" value="silver">
+                        Silver</label>
+                    <label class="sbs"><input type="radio" name="memberLevel" id="gold" value="gold">
+                        Gold</label>
+                    <label class="top">Business/Organization Description: <textarea name="description" id="description"
+                            cols="40" rows="10"></textarea></label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <button class="btn" type="submit">Join The Chamber</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Pleasant Grove Chamber of Commerce</p>
+            <p>123 Made Up lane Pleasant Grove, Ut</p>
+        </div>
+        <div>
+            Contact Us: contact@pgchamber.fake 555-555-1234
+        </div>
+        <div>
+            <p>&copy; <span id="year"></span> | Tagg McDonald | WDD 230 Chamber Project |
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

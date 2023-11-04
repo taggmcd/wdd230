@@ -8,6 +8,9 @@
     --color-para-bg: var(--accent2);
     --color-bg-text: white;
 
+    --required-color: #ff715b;
+    --valid-color: #1ea896;
+
     --heading-font: Roboto, sans-serif;
     --paragraph-font: Actor, Helvetica, sans-serif;
 }
@@ -149,7 +152,7 @@ section h2 {
 }
 
 section div {
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .card {
@@ -176,10 +179,62 @@ footer {
     position: absolute;
     top: .5rem;
     right: .5rem;
-    font-size: 3rem;
+    font-size: 1rem;
     cursor: pointer;
+    color: var(--color-bg-text);
 }
 
 #images {
     text-align: center;
+}
+
+section form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-bg-text);
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--color-bg-text);
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: var(--color-bg-text);
+}
+
+form button {
+    border: none;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: var(--required-color) solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: var(--valid-color) solid 6px;
 }
