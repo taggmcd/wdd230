@@ -1,0 +1,13 @@
+{
+  "Family Name": "McDonald",
+  "Move In Date": "05/01/2009",
+  "Member Count": 5,
+  "Visited by Bishopric": true,
+  "Family Members": [
+    { "Name": "Tagg", "Gender": "M", "Birthdate": "09/25/1982" },
+    { "Name": "Heather", "Gender": "F", "Birthdate": "12/02/1983" },
+    { "Name": "Kenny", "Gender": "M", "Birthdate": "05/28/2007" },
+    { "Name": "Jordan", "Gender": "M", "Birthdate": "06/21/2010" },
+    { "Name": "Andy", "Gender": "F", "Birthdate": "11/04/2014" }
+  ]
+}
