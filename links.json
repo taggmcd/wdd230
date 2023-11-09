@@ -1,0 +1,43 @@
+{
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        {
+          "url": "https://codepen.io/taggmcd/pen/QWzgxEK",
+          "title": "JS Pen"
+        },
+        {
+          "url": "lesson1/holygrail.html",
+          "title": "Holy Layout"
+        }
+      ]
+    },
+    {
+      "lesson": "02",
+      "links": [
+        {
+          "url": "lesson2/media-query.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "lesson2/design-principles.html",
+          "title": "Design Principles Document"
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
+        {
+          "url": "https://codepen.io/taggmcd/pen/ZEVVeow",
+          "title": "Pseudo-classes Pen"
+        },
+        {
+          "url": "https://taggmcd.github.io/wdd230/chamber/",
+          "title": "Chamber Site"
+        }
+      ]
+    }
+  ]
+}
