@@ -30,6 +30,27 @@
       "lesson": "03",
       "links": [
         {
+          "url": "https://codepen.io/taggmcd/pen/rNovXpG",
+          "title": "Responsive Pen"
+        },
+        {
+          "url": "https://codepen.io/taggmcd/pen/eYbrqyE",
+          "title": "Pseudo-elements Pen"
+        },
+        {
+          "url": "lesson03/images/Screenshot-2023-09-27.png",
+          "title": "Combinator Exercise"
+        },
+        {
+          "url": "https://taggmcd.github.io/wdd230/lesson03/chamber-site-plan.html",
+          "title": "Chamber Site Plan"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        {
           "url": "https://codepen.io/taggmcd/pen/ZEVVeow",
           "title": "Pseudo-classes Pen"
         },
@@ -38,6 +59,70 @@
           "title": "Chamber Site"
         }
       ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "lesson05/bom.html",
+          "title": "BOM Application"
+        },
+        {
+          "url": "https://taggmcd.github.io/wdd230/chamber/",
+          "title": "Chamber Site"
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        {
+          "url": "lesson06/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "lesson06/responsive-images.html",
+          "title": "Responsive Images"
+        }
+      ]
+    },
+    {
+      "lesson": "07",
+      "links": []
+    },
+    {
+      "lesson": "08",
+      "links": [
+        {
+          "url": "lesson08/tablebuild.html",
+          "title": "Table Activity"
+        },
+        {
+          "url": "lesson08/index.html",
+          "title": "Form Activity"
+        },
+        {
+          "url": "form.html",
+          "title": "Group Activity"
+        }
+      ]
+    },
+    {
+      "lesson": "09",
+      "links": [
+        {
+          "url": "lesson09/new-ward-members.json",
+          "title": "New Member JSON"
+        },
+        {
+          "url": "lesson09/prophets.html",
+          "title": "Fetch Activity"
+        }
+      ]
+    },
+    {
+      "lesson": "10",
+      "links": []
     }
   ]
 }
