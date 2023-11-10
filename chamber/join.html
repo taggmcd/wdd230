@@ -107,9 +107,12 @@
                     <label class="top">First Name*: <input type="text" name="lName" id="lName" required></label>
                     <label class="top">Last Name*: <input type="text" name="fName" id="fName" required></label>
                     <label class="top">Position/Job Title:<input type="text" name="title" id="title"
-                            pattern="^[a-zA-Z\s\-]{7,}$"></label>
-                    <label class="top">Phone*: <input type="tel" name="phone" id="phone" required
+                            pattern="^[a-zA-Z\s\-]{7,}$"
+                            title="Please make sure your title is at least 7 charactor long and only contains letters, spaces, and dashes"></label>
+                    <label class="top">Email*: <input type="email" name="email" id="email" required
                             placeholder="user@domain.com"></label>
+                    <label class="top">Phone*: <input type="tel" name="phone" id="phone" required
+                            placeholder="555-555-5555"></label>
                     <label class="top">Company/Organization*: <input type="text" name="organization" id="organization"
                             required></label>
                     <div>Membership Level</div>
