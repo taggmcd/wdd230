@@ -188,6 +188,12 @@ footer {
     text-align: center;
 }
 
+.container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section form {
     margin-left: auto;
     margin-right: auto;
