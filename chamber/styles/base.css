@@ -241,6 +241,17 @@ form label.top input:required:valid {
 
 .grid-list {
     text-align: center;
+    padding: 2rem;
+}
+
+.toggle {
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #ff715b;
 }
 
 .member-grid {
@@ -298,7 +309,6 @@ form label.top input:required:valid {
 
 .member-section h2 {
     background-color: inherit;
-    /* height: 6rem; */
     color: var(--color-bg-text);
     font-size: 1.5rem;
 }
