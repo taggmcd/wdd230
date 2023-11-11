@@ -1,0 +1,116 @@
+{
+  "members": [
+    {
+      "name": "Cravings - Alisha's Cupcakes",
+      "address": {
+        "street": "93 S Main St suite c",
+        "city": "Pleasant Grove",
+        "state": "Ut",
+        "zip": "84062"
+      },
+      "phone": "(801) 899-2185",
+      "website": "http://cravingsalishascupcakes.com/",
+      "image": {
+        "src": "images/members/cravings-alishas-cupcakes-logo.webp",
+        "alt": "Cravings Alisha's Cupcakes Logo"
+      },
+      "level": "Gold"
+    },
+    {
+      "name": "Cravings Bistro",
+      "address": {
+        "street": "25 W Center St",
+        "city": "Pleasant Grove",
+        "state": "Ut",
+        "zip": "84062"
+      },
+      "phone": "(801) 516-1069",
+      "website": "https://www.cravingsbistro.com/",
+      "image": {
+        "src": "images/members/cravings-bistro-logo.webp",
+        "alt": "Cravings Bistro Logo"
+      },
+      "level": "Silver"
+    },
+    {
+      "name": "Kangaroo Zoo",
+      "address": {
+        "street": "513 W 700 S",
+        "city": "Pleasant Grove",
+        "state": "Ut",
+        "zip": "84062"
+      },
+      "phone": "(801) 785-9999",
+      "website": "https://kangaroozoo.com/",
+      "image": {
+        "src": "images/members/kangaroo-logo.webp",
+        "alt": "Kangaroo Zoo Logo"
+      },
+      "level": "Bronze"
+    },
+    {
+      "name": "Los Dos Compadres Restaurant",
+      "address": {
+        "street": "330 E State Rd",
+        "city": "Pleasant Grove",
+        "state": "Ut",
+        "zip": "84062"
+      },
+      "phone": "(801) 796-0979",
+      "website": "https://foursquare.com/v/los-dos-compadres/4b3123f4f964a520fb0025e3",
+      "image": {
+        "src": "images/members/los-dos.webp",
+        "alt": "Dining area of Los Dos Compadres"
+      },
+      "level": "Gold"
+    },
+    {
+      "name": "Chubby's Cafe",
+      "address": {
+        "street": "336 S Main St",
+        "city": "Pleasant Grove",
+        "state": "Ut",
+        "zip": "84062"
+      },
+      "phone": "(801) 785-1503",
+      "website": "http://www.chubbyscafe.com/",
+      "image": {
+        "src": "images/members/chubbys-cafe-logo.webp",
+        "alt": "Chubby's Cafe Logo"
+      },
+      "level": "Silver"
+    },
+    {
+      "name": "Purple Turtle",
+      "address": {
+        "street": "85 E State Rd",
+        "city": "Pleasant Grove",
+        "state": "Ut",
+        "zip": "84062"
+      },
+      "phone": "(801) 785-2444",
+      "website": "https://purpleturtlediner.com/",
+      "image": {
+        "src": "images/members/purple-turtle-logo.webp",
+        "alt": "Purple Turtle Logo"
+      },
+      "level": "Bronze"
+    },
+    {
+      "name": "The Escape Date",
+      "address": {
+        "street": "405 South 100 East #14",
+        "city": "Pleasant Grove",
+        "state": "Ut",
+        "zip": "84062"
+      },
+      "phone": "(385) 323-0617",
+      "website": "https://www.theescapedate.com/",
+      "image": {
+        "src": "images/members/the-escape-date-logo.webp",
+        "alt": "The Escape Date Logo"
+      },
+      "level": "Gold"
+    }
+  ]
+}

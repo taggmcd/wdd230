@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stanley McDonald WDD 230 Chamber of Commerce Project">
+    <meta name="description" content="Stanley McDonald WDD 230 Chamber of Commerce Project Directory">
     <meta name="author" content="Tagg McDonald">
-    <title>Stanley McDonald - WDD 230 - Chamber of Commerce Project</title>
+    <title>Stanley McDonald - WDD 230 - Chamber of Commerce Project Directory</title>
 
-    <meta property="og:title" content="Stanley McDonald - WDD 230 - Chamber of Commerce Project">
+    <meta property="og:title" content="Stanley McDonald - WDD 230 - Chamber of Commerce Project Directory">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://taggmcd.github.io/wdd230/chamber/">
     <meta property="og:image" content="https://taggmcd.github.io/wdd230/images/Little_mountain_utah.jpg">
@@ -47,59 +47,14 @@
             <a href="join.html">Join</a>
         </nav>
     </header>
-    <div class="hero">
-        <h1>Pleasant Grove Chamber of Commerce</h1>
-        <!-- <img srcset="images/hero-sm.jpg 400w, images/l6-hero-md.webp 768w, images/l6-hero-lg.webp 1024w"
-            sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, 1024px" src="images/l6-hero-sm.webp"
-            alt="Monthy meeting featuring Jimmy from TreeFort builders"> -->
-        <picture>
-            <source media="(max-width: 500px)" srcset="images/l6-hero-sm.webp">
-            <source media="(max-width: 1024px)" srcset="images/l6-hero-md.webp">
-            <img src="images/l6-hero-lg.webp" alt="Chamber Meeting">
-        </picture>
-        <a href="#" class="cta">Join the Chamber</a>
-    </div>
-    <main class="grid">
-        <section class="section" id="events">
-            <h2>Events</h2>
-            <div>
-                <h3>Super Cool Event</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe recusandae corporis porro veritatis
-                    officia. Ab rem animi quam nesciunt dicta sed eveniet tenetur doloribus illum. Quaerat facilis quod
-                    corrupti labore.</p>
-            </div>
-        </section>
-        <section class="section" id="weather">
-            <h2>Weather</h2>
-            <div>
-                <p>Temperature: <span id="temperature">75</span>&deg;F</p>
-                <p>Humidity: <span id="humidity">34</span>%</p>
-                <p>Windchill: <span id="windchill"></span></p>
-            </div>
-        </section>
-        <section class="section" id="member-spotlight">
-            <h2>Member Spotlight</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Member 1</h3>
-                    <p>
-                        Member info
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>Member 2</h3>
-                    <p>
-                        Member info
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>Member 3</h3>
-                    <p>
-                        Member info
-                    </p>
-                </div>
-            </div>
-        </section>
+    <main>
+        <div class="theme"> <label for="theme" class="theme">
+                <span class="theme--text">Grid</span>
+                <input type="checkbox" id="theme">
+                <span class="theme--btn"></span>
+                <span class="theme--text">List</span>
+            </label></div>
+        <div id="members"></div>
     </main>
     <footer>
         <div>
@@ -117,7 +72,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/layout.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 
 </html>
