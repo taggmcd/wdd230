@@ -1,6 +1,5 @@
 const membersElement = document.getElementById("members");
-const membersUrl = "https://taggmcd.github.io/wdd230/chamber/members.json";
-// const membersUrl = "http://localhost:5501/chamber/members.json";
+const membersUrl = "https://taggmcd.github.io/wdd230/chamber/data/members.json";
 
 membersElement.classList.add("member-grid");
 
