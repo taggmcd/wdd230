@@ -123,17 +123,12 @@ nav a {
     top: 20px;
 }
 
-main {
+.grid {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-section {
+.section {
     margin: 10px 0px;
     padding: 0px;
     background-color: var(--color-para-bg);
@@ -143,7 +138,7 @@ section {
     border-width: 1px;
 }
 
-section h2 {
+.section h2 {
     background: #1ea896;
     color: #000000;
     margin: 0;
@@ -151,7 +146,7 @@ section h2 {
     width: 100%;
 }
 
-section div {
+.section div {
     padding: 10px 10px;
 }
 
@@ -159,7 +154,6 @@ section div {
     background: white;
     color: black;
 }
-
 
 footer {
     background-color: var(--primary);
@@ -194,7 +188,7 @@ footer {
     margin-right: auto;
 }
 
-section form {
+.section form {
     margin-left: auto;
     margin-right: auto;
 }
@@ -243,4 +237,89 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: var(--valid-color) solid 6px;
+}
+
+.grid-list {
+    text-align: center;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.member-grid section {
+    text-align: center;
+    height: 300px;
+}
+
+.member-grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+.member-grid section>* {
+    margin: 0.1rem;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 10px;
+    padding: 0.25rem;
+}
+
+.member-list section>* {
+    margin: 0 1rem;
+}
+
+.member-list section img {
+    display: none;
+}
+
+.member-list section h2 {
+    font-size: 1rem;
+}
+
+.member-list section:nth-child(odd) {
+    background-color: var(--accent2);
+}
+
+.member-list section:nth-child(even) {
+    background-color: var(--primary);
+}
+
+.member-section h2 {
+    background-color: inherit;
+    /* height: 6rem; */
+    color: var(--color-bg-text);
+    font-size: 1.5rem;
+}
+
+.member-section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+.member-section a {
+    font-size: 0.85rem;
+    color: var(--color-bg-text);
+    letter-spacing: 1.1pt;
+}
+
+.member-img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    max-width: 100%;
+    background-color: gray;
 }
