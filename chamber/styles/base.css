@@ -99,6 +99,28 @@ nav a {
     display: block;
 }
 
+#banner.show {
+    display: block;
+}
+
+#banner {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+#banner-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    cursor: pointer;
+}
+
 .hero {
     position: relative;
 }
@@ -180,6 +202,10 @@ footer {
 
 #images {
     text-align: center;
+}
+
+#weather-icon {
+    vertical-align: middle;
 }
 
 .container {

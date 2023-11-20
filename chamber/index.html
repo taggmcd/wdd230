@@ -47,11 +47,9 @@
             <a href="join.html">Join</a>
         </nav>
     </header>
+    <div id="banner"><span id="banner-close">X</span></div>
     <div class="hero">
         <h1>Pleasant Grove Chamber of Commerce</h1>
-        <!-- <img srcset="images/hero-sm.jpg 400w, images/l6-hero-md.webp 768w, images/l6-hero-lg.webp 1024w"
-            sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, 1024px" src="images/l6-hero-sm.webp"
-            alt="Monthy meeting featuring Jimmy from TreeFort builders"> -->
         <picture>
             <source media="(max-width: 500px)" srcset="images/l6-hero-sm.webp">
             <source media="(max-width: 1024px)" srcset="images/l6-hero-md.webp">
@@ -72,8 +70,9 @@
         <section class="section" id="weather">
             <h2>Weather</h2>
             <div>
-                <p>Temperature: <span id="temperature">75</span>&deg;F</p>
-                <p>Humidity: <span id="humidity">34</span>%</p>
+                <p><img id="weather-icon" src="" alt=""> <span id="figcaption"></span> - <span id="temperature"></span>
+                </p>
+                <p>Humidity: <span id="humidity"></span>%</p>
                 <p>Windchill: <span id="windchill"></span></p>
             </div>
         </section>
@@ -117,7 +116,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
