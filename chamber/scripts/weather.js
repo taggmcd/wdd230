@@ -6,8 +6,6 @@ const captionDesc = document.getElementById("figcaption");
 const forcastElement = document.getElementById("forecast");
 let windChillElement = document.getElementById("windchill");
 
-// let windSpeed = 0;
-
 const forecastUrl =
   "https://api.openweathermap.org/data/2.5/forecast?appid=92ee7552adb4dec37560965f6191e3b0&units=imperial&lat=40.37&lon=-111.74";
 const weatherUrl =
@@ -61,7 +59,6 @@ function displayWeather(data) {
   currentIcon.setAttribute("src", icon);
   currentIcon.setAttribute("alt", description);
   captionDesc.textContent = `${description}`;
-  console.log(windSpeed);
 }
 
 function displayForecast(data) {
@@ -100,15 +97,7 @@ function displayForecast(data) {
     containerElement.appendChild(descriptionElement);
 
     forcastElement.appendChild(containerElement);
-
-    forecast.push({
-      day: dayName,
-      temp: data[i].main.temp,
-      icon: data[i].weather[0].icon,
-      description: titleCase(data[i].weather[0].description),
-    });
   }
-  console.log(forecast);
 }
 
 function titleCase(str) {
