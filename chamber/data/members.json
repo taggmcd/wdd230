@@ -11,8 +11,10 @@
       "phone": "(801) 899-2185",
       "website": "http://cravingsalishascupcakes.com/",
       "image": {
-        "src": "images/members/cravings-alishas-cupcakes-logo.webp",
-        "alt": "Cravings Alisha's Cupcakes Logo"
+        "src": "images/members/cravings-alishas-cupcakes-logo-sm.webp",
+        "alt": "Cravings Alisha's Cupcakes Logo",
+        "width": 260,
+        "height": 100
       },
       "level": "Gold"
     },
@@ -27,8 +29,10 @@
       "phone": "(801) 516-1069",
       "website": "https://www.cravingsbistro.com/",
       "image": {
-        "src": "images/members/cravings-bistro-logo.webp",
-        "alt": "Cravings Bistro Logo"
+        "src": "images/members/cravings-bistro-logo-sm.webp",
+        "alt": "Cravings Bistro Logo",
+        "width": 295,
+        "height": 100
       },
       "level": "Silver"
     },
@@ -43,8 +47,10 @@
       "phone": "(801) 785-9999",
       "website": "https://kangaroozoo.com/",
       "image": {
-        "src": "images/members/kangaroo-logo.webp",
-        "alt": "Kangaroo Zoo Logo"
+        "src": "images/members/kangaroo-logo-sm.webp",
+        "alt": "Kangaroo Zoo Logo",
+        "width": 83,
+        "height": 100
       },
       "level": "Bronze"
     },
@@ -59,8 +65,10 @@
       "phone": "(801) 796-0979",
       "website": "https://foursquare.com/v/los-dos-compadres/4b3123f4f964a520fb0025e3",
       "image": {
-        "src": "images/members/los-dos.webp",
-        "alt": "Dining area of Los Dos Compadres"
+        "src": "images/members/los-dos-sm.webp",
+        "alt": "Dining area of Los Dos Compadres",
+        "width": 100,
+        "height": 100
       },
       "level": "Gold"
     },
@@ -75,8 +83,10 @@
       "phone": "(801) 785-1503",
       "website": "http://www.chubbyscafe.com/",
       "image": {
-        "src": "images/members/chubbys-cafe-logo.webp",
-        "alt": "Chubby's Cafe Logo"
+        "src": "images/members/chubbys-cafe-logo-sm.webp",
+        "alt": "Chubby's Cafe Logo",
+        "width": 103,
+        "height": 100
       },
       "level": "Silver"
     },
@@ -91,8 +101,10 @@
       "phone": "(801) 785-2444",
       "website": "https://purpleturtlediner.com/",
       "image": {
-        "src": "images/members/purple-turtle-logo.webp",
-        "alt": "Purple Turtle Logo"
+        "src": "images/members/purple-turtle-logo-sm.webp",
+        "alt": "Purple Turtle Logo",
+        "width": 216,
+        "height": 100
       },
       "level": "Bronze"
     },
@@ -107,8 +119,10 @@
       "phone": "(385) 323-0617",
       "website": "https://www.theescapedate.com/",
       "image": {
-        "src": "images/members/the-escape-date-logo.webp",
-        "alt": "The Escape Date Logo"
+        "src": "images/members/the-escape-date-logo-sm.webp",
+        "alt": "The Escape Date Logo",
+        "width": 113,
+        "height": 100
       },
       "level": "Gold"
     }
