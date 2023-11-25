@@ -13,5 +13,4 @@ if (lastVisit === today) {
   visitorElement.textContent = `You last visited ${daysSinceVisit} days ago.`;
 }
 
-console.log(daysSinceVisit);
 localStorage.setItem("lastVisit", today);
