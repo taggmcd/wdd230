@@ -159,6 +159,10 @@ nav a {
     max-width: 100%;
 }
 
+#discover {
+    text-align: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
