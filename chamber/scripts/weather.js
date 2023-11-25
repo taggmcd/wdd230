@@ -88,6 +88,9 @@ function displayForecast(data) {
       `https://openweathermap.org/img/w/${data[i].weather[0].icon}.png`
     );
     iconElement.setAttribute("alt", titleCase(data[i].weather[0].description));
+    iconElement.setAttribute("width", 50);
+    iconElement.setAttribute("height", 50);
+
     tempElement.innerHTML = `<br>${Math.round(data[i].main.temp)}&deg; F <br>`;
     descriptionElement.textContent = titleCase(data[i].weather[0].description);
 

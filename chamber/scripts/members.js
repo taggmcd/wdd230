@@ -28,6 +28,9 @@ const displayMembers = (members) => {
     websiteElement.setAttribute("href", member.website);
     websiteElement.innerHTML = "<br>Visit Website";
     logoElement.setAttribute("src", member.image.src);
+    logoElement.setAttribute("alt", member.image.alt);
+    logoElement.setAttribute("height", member.image.height);
+    logoElement.setAttribute("width", member.image.width);
 
     sectionElement.appendChild(h2Element);
     sectionElement.appendChild(logoElement);
