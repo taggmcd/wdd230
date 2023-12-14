@@ -1,0 +1,292 @@
+:root {
+    --primary: #5D737E;
+    --secondary: #ccdde2;
+    --accent1: #fcfffd;
+    --accent2: #A5124B;
+    --color-para-bg: var(--accent2);
+    --color-bg-text: white;
+
+    --required-color: #ff715b;
+    --valid-color: #1ea896;
+
+    --heading-font: Roboto, sans-serif;
+    --paragraph-font: Actor, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font), sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: var(--paragraph-font), sans-serif;
+    background-color: var(--primary);
+}
+
+#banner.show {
+    display: block;
+    z-index: 10;
+}
+
+#banner {
+    position: absolute;
+    width: 100%;
+    background-color: var(--accent1);
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+#banner-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1024px;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    background-color: var(--secondary);
+}
+
+header img {
+    display: inline-block;
+    vertical-align: center;
+    height: 150px;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    background-color: var(--accent1);
+    padding: .5rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid var(--primary);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: white;
+    color: var(--secondary);
+    justify-self: right;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.active {
+    color: var(--accent2);
+    background-color: var(--accent1);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    background-color: #000000;
+    padding: 0px 3px;
+    left: 50px;
+    bottom: 15px;
+    color: var(--accent1);
+    font-size: medium;
+}
+
+main {
+    color: var(--accent1);
+}
+
+.heading {
+    text-align: center;
+}
+
+.index-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #ccdde2;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid var(--accent1);
+    margin: 0px auto 3rem;
+    padding: 0px 20px 20px;
+    border-radius: 3rem 1rem 3rem 1rem;
+    min-height: 10rem;
+}
+
+.card:hover>h2 {
+    margin-left: 30px;
+}
+
+.card ul,
+li {
+    font-size: large;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.card>h2 {
+    width: fit-content;
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+    background-color: var(--primary);
+}
+
+.card p {
+    font-size: large;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+}
+
+#rentalTable {
+    color: black;
+    background-color: var(--accent1);
+    text-align: center;
+    margin: 10px auto;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--secondary);
+}
+
+.section form {
+    display: flex;
+    align-items: center;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent1);
+}
+
+form label.top option {
+    background-color: var(--primary);
+}
+
+form label.top input,
+form label.top textarea,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--accent1);
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--accent1);
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: var(--secondary);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: var(--accent1);
+}
+
+form button {
+    border: none;
+    background-color: var(--accent2);
+    color: var(--accent1);
+    border-radius: 1rem;
+    padding: .75rem;
+    margin-top: .75rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.top input:required,
+form label.top textarea:required,
+form label.top select:required {
+    border-left: var(--accent2) solid 6px;
+}
+
+form label.top input:required:valid,
+form label.top textarea:required:valid,
+form label.top select:required:has([value=""]:not(:checked)) {
+    border-left: var(--valid-color) solid 6px;
+}

@@ -1,0 +1,60 @@
+@media screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: var(--secondary);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        font-weight: 600;
+        background-color: var(--accent1);
+        padding: .5rem;
+        margin-left: .25rem;
+        margin-right: .25rem;
+        border-radius: 10px 10px 0px 0px;
+        border-top: 1px solid var(--primary);
+        border-right: 1px solid var(--primary);
+        border-left: 1px solid var(--primary);
+    }
+
+    nav a:hover {
+        color: var(--accent1);
+        background-color: var(--primary);
+    }
+
+    .index-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .col-2 {
+        grid-column: 1/3;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+
+}

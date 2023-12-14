@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots, your friendly motor scooter, ATV, and Jeep rental source">
+    <meta name="author" content="Tagg McDonald">
+    <title>Scoots Motor Scooter, ATV, and Jeep Rentals - Contact</title>
+
+    <meta property="og:title" content="Scoots Motor Scooter, ATV, and Jeep Rentals - Contact">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taggmcd.github.io/wdd230/finial/">
+    <meta property="og:image" content="https://taggmcd.github.io/wdd230/finial/images/scoots.webp">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Actor&family=Roboto&display=swap">
+</head>
+
+<body>
+    <div id="banner" class="show"><span id="banner-close">X</span></div>
+    <div class="container">
+        <header>
+            <img src="images/scoots-logo.webp" alt="Logo Be here" height="150" width="150">
+            <nav>
+                <a id="home-link" href="index.html">Home</a>
+                <a id="rentals-link" href="rentals.html">Rentals</a>
+                <a id="reservation-link" href="reservation.html">Reservation</a>
+                <a id="contact-link" href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="heading">Contact Scoots</h1>
+            <div class="index-grid">
+                <section class="card col-2">
+                    <h2>Locations</h2>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/d/embed?mid=1VkpB0WFajnA7ujKVRvFEwNS51uTFK-Y&ehbc=2E312F&noprof=1"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section class="card">
+                    <h2>Contact Information</h2>
+                    <h3>Phone</h3>
+                    <ul>
+                        <li>Location 1 - 555-555-5555</li>
+                        <li>Location 2 - 555-555-1234</li>
+                    </ul>
+                    <h3>Address</h3>
+                    <ul>
+                        <li>Location 1 - Av. Rafael E. Melgar Esq, Av Lic Benito Juárezo Juárez</li>
+                        <li>Location 2 - Carr. Costera Sur, 77675 Costa Maya</li>
+                    </ul>
+                    <h3>EMail</h3>
+                    <ul>
+                        <li>contact@scoots.fake</li>
+                    </ul>
+                </section>
+                <section class="card">
+                    <h2>Weather</h2>
+                    <form action="thanks.html" method="get">
+                        <label class="top">Name*: <input type="text" name="name" id="name" required
+                                placeholder="Firstname Lastname"></label>
+                        <label class="top">Email*: <input type="email" name="email" id="email" required
+                                placeholder="user@domain.com"></label>
+                        <label class="top">Special Requests*:
+                            <textarea name="requests" id="requests" cols="30" rows="10"
+                                placeholder="Any questions or comments you have" required></textarea>
+                        </label>
+
+                        <button class="btn" type="submit">Create Reservation</button>
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Follow us: <a href="https://www.facebook.com/">Facebook</a> | <a
+                    href="https://www.instagram.com/">Instagram</a> | <a href="https://www.twitter.com/">Twitter</a>
+            </p>
+            <div>
+                <p>Scoots<br>
+                    Av. Rafael E. Melgar Esq, Av Lic Benito Juárezo Juárez <br>
+                    Email: contact@scoots.fake <br>
+                    Phone: 555-555-1234</p>
+            </div>
+            <div class="col-2">
+                <p>&copy; <span id="year"></span> | Tagg McDonald | WDD 230 Scoots Finial Project | <span
+                        id="lastModified"></span></p>
+            </div>
+    </div>
+    </footer>
+    </div>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
