@@ -280,13 +280,11 @@ form button {
 }
 
 form label.top input:required,
-form label.top textarea:required,
-form label.top select:required {
+form label.top textarea:required {
     border-left: var(--accent2) solid 6px;
 }
 
 form label.top input:required:valid,
-form label.top textarea:required:valid,
-form label.top select:required:has([value=""]:not(:checked)) {
+form label.top textarea:required:valid {
     border-left: var(--valid-color) solid 6px;
 }
