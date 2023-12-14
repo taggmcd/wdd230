@@ -2,12 +2,10 @@ const banner = document.getElementById("banner");
 
 const temp = document.getElementById("temp");
 const humidity = document.getElementById("humidity");
-const currentIcon = document.getElementById("weather-icon");
-const currentDesc = document.getElementById("description");
+const curInfo = document.getElementById("cur-info");
 
 const forecastElement = document.getElementById("forecast");
-const forecastIcon = document.getElementById("for-weather-icon");
-const forecastDesc = document.getElementById("for-description");
+const forecastInfo = document.getElementById("forecast-info");
 
 const forecastUrl =
   "https://api.openweathermap.org/data/2.5/forecast?appid=92ee7552adb4dec37560965f6191e3b0&units=imperial&lat=20.46&lon=-86.92";
@@ -49,12 +47,19 @@ function displayWeather(data) {
   // Main weather goodness
   if (temp != null) {
     temp.innerHTML = `${Math.round(data.main.temp)}&deg; F`;
-    const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let description = titleCase(data.weather[0].description);
-    humidity.textContent = `Humidity: ${data.main.humidity}%`;
-    currentIcon.setAttribute("src", icon);
-    currentIcon.setAttribute("alt", description);
-    currentDesc.textContent = `${description}`;
+
+    data.weather.forEach((element) => {
+      let currentIcon = document.createElement("img");
+      let currentDesc = document.createElement("span");
+      let icon = `https://openweathermap.org/img/w/${element.icon}.png`;
+      let description = titleCase(element.description);
+      humidity.textContent = `Humidity: ${data.main.humidity}%`;
+      currentIcon.setAttribute("src", icon);
+      currentIcon.setAttribute("alt", description);
+      currentDesc.textContent = `${description}`;
+      curInfo.appendChild(currentIcon);
+      curInfo.appendChild(currentDesc);
+    });
   }
 }
 
@@ -69,14 +74,21 @@ function displayForecast(data) {
   const forecast = data.filter(
     (day) => day.dt == Math.floor(date.getTime() / 1000)
   );
-
-  const icon = `https://openweathermap.org/img/w/${forecast[0].weather[0].icon}.png`;
-  let description = titleCase(forecast[0].weather[0].description);
-
   forecastElement.innerHTML = `${Math.round(forecast[0].main.temp_max)}&deg; F`;
-  forecastIcon.setAttribute("src", icon);
-  forecastIcon.setAttribute("alt", description);
-  forecastDesc.textContent = `${description}`;
+
+  forecast[0].weather.forEach((element) => {
+    let icon = `https://openweathermap.org/img/w/${element.icon}.png`;
+    let description = titleCase(element.description);
+    let forecastIcon = document.createElement("img");
+    let forecastDesc = document.createElement("span");
+
+    forecastIcon.setAttribute("src", icon);
+    forecastIcon.setAttribute("alt", description);
+    forecastDesc.textContent = `${description}`;
+
+    forecastInfo.appendChild(forecastIcon);
+    forecastInfo.appendChild(forecastDesc);
+  });
 }
 
 function titleCase(str) {
