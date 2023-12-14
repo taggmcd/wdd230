@@ -47,8 +47,9 @@ function displayWeather(data) {
   // Main weather goodness
   if (temp != null) {
     temp.innerHTML = `${Math.round(data.main.temp)}&deg; F`;
-
     data.weather.forEach((element) => {
+      console.log(element);
+
       let currentIcon = document.createElement("img");
       let currentDesc = document.createElement("span");
       let icon = `https://openweathermap.org/img/w/${element.icon}.png`;
@@ -56,7 +57,7 @@ function displayWeather(data) {
       humidity.textContent = `Humidity: ${data.main.humidity}%`;
       currentIcon.setAttribute("src", icon);
       currentIcon.setAttribute("alt", description);
-      currentDesc.textContent = `${description}`;
+      currentDesc.textContent = `${element.main}`;
       curInfo.appendChild(currentIcon);
       curInfo.appendChild(currentDesc);
     });
@@ -84,7 +85,7 @@ function displayForecast(data) {
 
     forecastIcon.setAttribute("src", icon);
     forecastIcon.setAttribute("alt", description);
-    forecastDesc.textContent = `${description}`;
+    forecastDesc.textContent = `${element.main}`;
 
     forecastInfo.appendChild(forecastIcon);
     forecastInfo.appendChild(forecastDesc);
