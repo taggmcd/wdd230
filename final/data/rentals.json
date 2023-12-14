@@ -4,7 +4,7 @@
       "type": "Honda Metro Scooter",
       "maxPersons": 1,
       "price": {
-        "reseravtion": {
+        "reservation": {
           "halfDay": 20,
           "fullDay": 30
         },
@@ -18,7 +18,7 @@
       "type": "Honda Dio Scooter",
       "maxPersons": 2,
       "price": {
-        "reseravtion": {
+        "reservation": {
           "halfDay": 30,
           "fullDay": 40
         },
@@ -32,7 +32,7 @@
       "type": "Honda PCX150 Scooter",
       "maxPersons": 2,
       "price": {
-        "reseravtion": {
+        "reservation": {
           "halfDay": 40,
           "fullDay": 50
         },
@@ -46,7 +46,7 @@
       "type": "Honda Pioneer ATV",
       "maxPersons": 4,
       "price": {
-        "reseravtion": {
+        "reservation": {
           "halfDay": 50,
           "fullDay": 70
         },
@@ -60,7 +60,7 @@
       "type": "Jeep Wrangler - 4 door with a/c",
       "maxPersons": 5,
       "price": {
-        "reseravtion": {
+        "reservation": {
           "halfDay": 70,
           "fullDay": 100
         },
@@ -74,7 +74,7 @@
       "type": "Jeep Wrangler - 2 door",
       "maxPersons": 4,
       "price": {
-        "reseravtion": {
+        "reservation": {
           "halfDay": 60,
           "fullDay": 85
         },
