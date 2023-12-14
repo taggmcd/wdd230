@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots, your friendly motor scooter, ATV, and Jeep rental source">
+    <meta name="author" content="Tagg McDonald">
+    <title>Scoots Motor Scooter, ATV, and Jeep Rentals - Reservation</title>
+
+    <meta property="og:title" content="Scoots Motor Scooter, ATV, and Jeep Rentals - Reservation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taggmcd.github.io/wdd230/finial/">
+    <meta property="og:image" content="https://taggmcd.github.io/wdd230/finial/images/scoots.webp">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Actor&family=Roboto&display=swap">
+</head>
+
+<body>
+    <div id="banner" class="show"><span id="banner-close">X</span></div>
+    <div class="container">
+        <header>
+            <img src="images/scoots-logo.webp" alt="Logo Be here" height="150" width="150">
+            <nav>
+                <a id="home-link" href="index.html">Home</a>
+                <a id="rentals-link" href="rentals.html">Rentals</a>
+                <a id="reservation-link" href="reservation.html">Reservation</a>
+                <a id="contact-link" href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <h1 class="heading">Make a Reservation</h1>
+            <div class="index-grid">
+                <section class="card">
+                    <h2>Service Agreement</h2>
+                    <p>A $50 security deposit is required to confirm reservations.</p>
+                    <p>A valid drivers license is required in hand at the time of rental.</p>
+                    <p>No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+                    <p>Fuel charge is not included.</p>
+                    <p>Unlimited mileage.</p>
+                    <p>Liability insurance is included.</p>
+                    <p>Damage insurance is available for purchase.</p>
+                    <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                    <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
+                    <p>Rentals may be returned to either physical location.</p>
+
+                </section>
+                <section class="card">
+                    <h2>Reservation</h2>
+                    <form action="thanks.html" method="get">
+                        <label class="top">First Name*: <input type="text" name="fName" id="fName" required
+                                placeholder="First"></label>
+                        <label class="top">Last Name*: <input type="text" name="lName" id="lName" required
+                                placeholder="Last"></label>
+                        <label class="top">Email*: <input type="email" name="email" id="email" required
+                                placeholder="user@domain.com"></label>
+                        <label class="top">Phone*: <input type="tel" name="phone" id="phone" required
+                                placeholder="555-555-5555"></label>
+                        <label class="top">Home State or Country: <input type="text" name="state" id="state" required
+                                placeholder="Utah"></label>
+                        <label class="top">Cruise Line: <input type="text" name="cruiseLine" id="cruiseLine"></label>
+                        <label class="top">Pickup Date:
+                            <input type="date" id="start" name="start" min="2018-01-01" required></label>
+                        <label class="top">Dropoff Date:
+                            <input type="date" id="end" name="end" min="2018-01-01" required></label>
+                        <label class="top">Rental Type:
+                            <select name="type" id="type" required>
+                                <option value="" selected disabled>Select type</option>
+                            </select>
+                        </label>
+                        <label class="top">Special Requests:
+                            <textarea name="requests" id="requests" cols="30" rows="10"
+                                placeholder="Add any accommodations you may need. If you are wanting a drop off please enter where you would like the rental dropped off."></textarea>
+                        </label>
+
+                        <button class="btn" type="submit">Create Reservation</button>
+                    </form>
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Follow us: <a href="https://www.facebook.com/">Facebook</a> | <a
+                    href="https://www.instagram.com/">Instagram</a> | <a href="https://www.twitter.com/">Twitter</a>
+            </p>
+            <div>
+                <p>Scoots<br>
+                    Av. Rafael E. Melgar Esq, Av Lic Benito Juárez <br>
+                    Email: contact@scoots.fake <br>
+                    Phone: 555-555-1234</p>
+            </div>
+            <div class="col-2">
+                <p>&copy; <span id="year"></span> | Tagg McDonald | WDD 230 Scoots finial Project | <span
+                        id="lastModified"></span></p>
+            </div>
+    </div>
+    </footer>
+    </div>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/reservation.js"></script>
+</body>
+
+</html>
